@@ -1,0 +1,22 @@
+{
+  "orderId": "ORD-00001", 
+  "orderDateTime": "2024-04-24T15:00:00Z", 
+  "items": [  
+    {
+      "itemId": "PER-00001", 
+      "itemName": "Bananas (Cavendish)",  
+      "itemType": "Produce",  
+      "unitPrice": 2.5,  
+      "unitOfMeasure": "kg",  
+      "orderedQuantity": 30,  
+      "batchId": "PER-00001-B",  
+      "discount": {  
+        "enabled": true,  
+        "discountType": "percentage",  
+        "discountValue": 0.0  
+      }
+    },
+  ],
+  "totalPrice": 75.0,  
+  "orderStatus": "pending",  
+}

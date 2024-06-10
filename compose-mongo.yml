@@ -1,0 +1,27 @@
+version: "3.7"
+networks:
+  redpanda_network:
+    driver: bridge
+services:
+  mongo-db:
+    image: mongo:7.0
+    container_name: mongo-inventory
+    command: ["--replSet", "rs0", "--bind_ip_all", "--port", "27017"]
+    restart: always
+    volumes:
+      - ./data.json:/data.json
+    networks:
+      - redpanda_network
+    ports:
+      - 27017:27017
+
+  connect-instance:
+    image: kconnect:1.0.2
+    build:
+      context: '.'
+      dockerfile: connect.dockerfile
+    container_name: kafka-connect
+    networks:
+      - redpanda_network
+    ports:
+      - 8083:8083

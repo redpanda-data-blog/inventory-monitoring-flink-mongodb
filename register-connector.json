@@ -1,0 +1,15 @@
+{
+  "name": "mongo-source",
+  "config": {
+    "connector.class": "com.mongodb.kafka.connect.MongoSourceConnector",
+    "tasks.max": "1",
+    "topics": "e-inventory.products",
+    "connection.uri": "mongodb://mongo-inventory:27017/?replicaSet=rs0",
+    "database": "e-inventory",
+    "collection": "products",
+    "key.converter": "org.apache.kafka.connect.json.JsonConverter",
+    "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+    "bootstrap.servers": "redpanda-0:9092,redpanda-1:9092,redpanda-2:9092",
+    "name": "mongo-source"
+  }
+}
