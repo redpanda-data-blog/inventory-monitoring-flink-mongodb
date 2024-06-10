@@ -1,0 +1,677 @@
+[
+   {
+      "itemId":"PER-00001",
+      "itemName":"Bananas (Cavendish)",
+      "itemType":"Produce",
+      "supplier":{
+         "supplierId":"SUP-00001",
+         "name":"Tropical Fruits Ltd",
+         "contact":{
+            "email":"supplier@tropicalfruits.com",
+            "phone":"+1 (555) 555-5555"
+         }
+      },
+      "unitPrice":2.5,
+      "unitOfMeasure":"kg",
+      "perishable":true,
+      "reorderPoint": 50,
+	  "reorderQuantity": 100,
+      "batches":[
+         {
+            "batchId":"PER-00001-A",
+            "purchaseDate":"2024-04-20",
+            "expiryDate":"2024-04-27",
+            "currentStock":42,
+            "discount":{
+               "enabled":true,
+               "discountType":"percentage",
+               "discountValue":0.0
+            }
+         }
+      ]
+   },
+   {
+      "itemId":"GRO-00002",
+      "itemName":"Green Beans",
+      "itemType":"Produce",
+      "supplier":{
+         "supplierId":"SUP-00002",
+         "name":"Fresh Harvest Co.",
+         "contact":{
+            "email":"sales@freshharvest.com",
+            "phone":"+1 (888) 888-8888"
+         }
+      },
+      "unitPrice":1.99,
+      "unitOfMeasure":"kg",
+      "reorderPoint": 15,
+	  "reorderQuantity": 50,
+      "perishable":true,
+      "batches":[
+         {
+            "batchId":"GRO-00002-A",
+            "purchaseDate":"2024-04-22",
+            "expiryDate":"2024-04-29",
+            "currentStock":35,
+            "discount":{
+               "enabled":true,
+               "discountType":"percentage",
+               "discountValue":0.0
+            }
+         }
+      ]
+   },
+   {
+      "itemId":"BAK-00003",
+      "itemName":"Chocolate Chip Cookies",
+      "itemType":"Bakery",
+      "supplier":{
+         "supplierId":"SUP-00003",
+         "name":"Sweet Treats Bakery",
+         "contact":{
+            "email":"info@sweettreatsbakery.com",
+            "phone":"+1 (444) 444-4444"
+         }
+      },
+      "unitPrice":4.99,
+      "unitOfMeasure":"dozen",
+      "reorderPoint": 25,
+	  "reorderQuantity": 100,
+      "perishable":true,
+      "batches":[
+         {
+            "batchId":"BAK-00003-A",
+            "purchaseDate":"2024-04-21",
+            "expiryDate":"2024-04-25",
+            "currentStock":30,
+            "discount":{
+               "enabled":true,
+               "discountType":"percentage",
+               "discountValue":0.0
+            }
+         }
+      ]
+   },
+   {
+      "itemId":"BEV-00004",
+      "itemName":"Orange Juice",
+      "itemType":"Beverage",
+      "supplier":{
+         "supplierId":"SUP-00004",
+         "name":"Sunny Citrus Co.",
+         "contact":{
+            "email":"orders@sunnycitrus.com",
+            "phone":"+1 (777) 777-7777"
+         }
+      },
+      "unitPrice":2.75,
+      "unitOfMeasure":"L",
+      "reorderPoint": 50,
+	  "reorderQuantity": 100,
+      "perishable":true,
+      "batches":[
+         {
+            "batchId":"BEV-00004-A",
+            "purchaseDate":"2024-04-18",
+            "expiryDate":"2024-05-10",
+            "currentStock":80,
+            "discount":{
+               "enabled":true,
+               "discountType":"fixed amount",
+               "discountValue":0.5
+            }
+         }
+      ]
+   },
+   {
+      "itemId":"MEA-00005",
+      "itemName":"Beef (Ground Round)",
+      "itemType":"Meat",
+      "supplier":{
+         "supplierId":"SUP-00005",
+         "name":"Happy Trails Ranch",
+         "contact":{
+            "email":"ranch@happytrails.com",
+            "phone":"+1 (222) 222-2222"
+         }
+      },
+      "unitPrice":6.99,
+      "unitOfMeasure":"kg",
+      "reorderPoint": 50,
+	  "reorderQuantity": 50,
+      "perishable":true,
+      "batches":[
+         {
+            "batchId":"MEA-00005-A",
+            "purchaseDate":"2024-04-22",
+            "expiryDate":"2024-04-29",
+            "currentStock":50,
+            "discount":{
+               "enabled":false,
+               "discountType":"percentage",
+               "discountValue":0.0
+            }
+         },
+         {
+            "batchId":"MEA-00005-B",
+            "purchaseDate":"2024-04-19",
+            "expiryDate":"2024-05-03",
+            "currentStock":25,
+            "discount":{
+               "enabled":true,
+               "discountType":"fixed amount",
+               "discountValue":1.00
+            }
+         }
+      ]
+   },
+   {
+      "itemId":"CLE-00006",
+      "itemName":"All-Purpose Cleaner",
+      "itemType":"Cleaning",
+      "supplier":{
+         "supplierId":"SUP-00006",
+         "name":"Sparkling Clean Co.",
+         "contact":{
+            "email":"sales@sparklingclean.com",
+            "phone":"+1 (333) 333-3333"
+         }
+      },
+      "unitPrice":3.99,
+      "unitOfMeasure":"L",
+      "reorderPoint": 50,
+	  "reorderQuantity": 20,
+      "perishable":false,
+      "batches":[
+         {
+            "batchId":"CLE-00006-A",
+            "purchaseDate":"2024-04-15",
+            "expiryDate":null,
+            "currentStock":40,
+            "discount":{
+               "enabled":false,
+               "discountType":"percentage",
+               "discountValue":0.0
+            }
+         }
+      ]
+   },
+   {
+      "itemId":"dairy-00007",
+      "itemName":"Shredded Cheddar Cheese",
+      "itemType":"Dairy",
+      "supplier":{
+         "supplierId":"SUP-00007",
+         "name":"Happy Valley Creamery",
+         "contact":{
+            "email":"info@happyvalleycreamery.com",
+            "phone":"+1 (666) 666-6666"
+         }
+      },
+      "unitPrice":4.5,
+      "unitOfMeasure":"kg",
+      "reorderPoint": 20,
+	  "reorderQuantity": 100,
+      "perishable":true,
+      "batches":[
+         {
+            "batchId":"dairy-00007-A",
+            "purchaseDate":"2024-04-20",
+            "expiryDate":"2024-05-03",
+            "currentStock":15,
+            "discount":{
+               "enabled":true,
+               "discountType":"percentage",
+               "discountValue":0.1
+            }
+         },
+         {
+            "batchId":"dairy-00007-B",
+            "purchaseDate":"2024-04-22",
+            "expiryDate":"2024-05-08",
+            "currentStock":30,
+            "discount":{
+               "enabled":false,
+               "discountType":"percentage",
+               "discountValue":0.0
+            }
+         }
+      ]
+   },
+   {
+      "itemId":"OTC-00008",
+      "itemName":"Ibuprofen Tablets (200mg)",
+      "itemType":"Medicine",
+      "supplier":{
+         "supplierId":"SUP-00008",
+         "name":"Health Mart Pharmacy",
+         "contact":{
+            "email":"pharmacy@healthmart.com",
+            "phone":"+1 (999) 999-9999"
+         }
+      },
+      "unitPrice":5.99,
+      "unitOfMeasure":"bottle",
+      "reorderPoint": 20,
+	  "reorderQuantity": 75,
+      "perishable":true,
+      "batches":[
+         {
+            "batchId":"OTC-00008-A",
+            "purchaseDate":"2024-04-10",
+            "expiryDate":"2026-04-10",
+            "currentStock":50,
+            "discount":{
+               "enabled":false,
+               "discountType":"percentage",
+               "discountValue":0.0
+            }
+         }
+      ]
+   },
+   {
+      "itemId":"CAN-00009",
+      "itemName":"Black Beans (Canned)",
+      "itemType":"Canned Goods",
+      "supplier":{
+         "supplierId":"SUP-00009",
+         "name":"Global Harvest Co.",
+         "contact":{
+            "email":"sales@globalharvest.com",
+            "phone":"+1 (500) 500-5000"
+         }
+      },
+      "unitPrice":1.79,
+      "unitOfMeasure":"can",
+      "reorderPoint": 50,
+	  "reorderQuantity": 150,
+      "perishable":true,
+      "batches":[
+         {
+            "batchId":"CAN-00009-A",
+            "purchaseDate":"2024-04-18",
+            "expiryDate":"2025-01-20",
+            "currentStock":60,
+            "discount":{
+               "enabled":false,
+               "discountType":"percentage",
+               "discountValue":0.0
+            }
+         }
+      ]
+   },
+   {
+      "itemId":"TLS-00010",
+      "itemName":"Toilet Paper",
+      "itemType":"Hygiene",
+      "supplier":{
+         "supplierId":"SUP-00010",
+         "name":"Soft & Gentle Co.",
+         "contact":{
+            "email":"info@softandgentle.com",
+            "phone":"+1 (111) 111-1111"
+         }
+      },
+      "unitPrice":4.99,
+      "unitOfMeasure":"pack",
+      "reorderPoint": 30,
+	  "reorderQuantity": 75,
+      "perishable":false,
+      "batches":[
+         {
+            "batchId":"TLS-00010-A",
+            "purchaseDate":"2024-04-12",
+            "expiryDate":null,
+            "currentStock":40,
+            "discount":{
+               "enabled":true,
+               "discountType":"percentage",
+               "discountValue":0.15
+            }
+         },
+         {
+            "batchId":"TLS-00010-B",
+            "purchaseDate":"2024-04-20",
+            "expiryDate":null,
+            "currentStock":35,
+            "discount":{
+               "enabled":false,
+               "discountType":"percentage",
+               "discountValue":0.0
+            }
+         }
+      ]
+   },
+   {
+      "itemId":"PRO-00011",
+      "itemName":"Red Bell Peppers",
+      "itemType":"Produce",
+      "supplier":{
+         "supplierId":"SUP-00011",
+         "name":"Fresh Fields Farm",
+         "contact":{
+            "email":"farm@freshfields.com",
+            "phone":"+1 (800) 555-FRESH"
+         }
+      },
+      "unitPrice":2.25,
+      "unitOfMeasure":"kg",
+      "reorderPoint": 5,
+	  "reorderQuantity": 20,
+      "perishable":true,
+      "batches":[
+         {
+            "batchId":"PRO-00011-A",
+            "purchaseDate":"2024-04-22",
+            "expiryDate":"2024-04-29",
+            "currentStock":18,
+            "discount":{
+               "enabled":true,
+               "discountType":"percentage",
+               "discountValue":0.1
+            }
+         },
+         {
+            "batchId":"PRO-00011-B",
+            "purchaseDate":"2024-04-20",
+            "expiryDate":"2024-05-03",
+            "currentStock":25,
+            "discount":{
+               "enabled":false,
+               "discountType":"percentage",
+               "discountValue":0.0
+            }
+         }
+      ]
+   },
+   {
+      "itemId":"FRO-00012",
+      "itemName":"Frozen Mixed Vegetables",
+      "itemType":"Frozen Food",
+      "supplier":{
+         "supplierId":"SUP-00012",
+         "name":"Arctic Harvest",
+         "contact":{
+            "email":"sales@arcticharvest.com",
+            "phone":"+1 (400) 400-FROZEN"
+         }
+      },
+      "unitPrice":3.49,
+      "unitOfMeasure":"bag",
+      "reorderPoint": 50,
+	  "reorderQuantity": 75,
+      "perishable":true,
+      "batches":[
+         {
+            "batchId":"FRO-00012-A",
+            "purchaseDate":"2024-04-15",
+            "expiryDate":"2025-02-14",
+            "currentStock":42,
+            "discount":{
+               "enabled":false,
+               "discountType":"percentage",
+               "discountValue":0.0
+            }
+         }
+      ]
+   },
+   {
+      "itemId":"STA-00013",
+      "itemName":"Stapler",
+      "itemType":"Office Supplies",
+      "supplier":{
+         "supplierId":"SUP-00013",
+         "name":"Office Essentials Inc.",
+         "contact":{
+            "email":"sales@officeessentials.com",
+            "phone":"+1 (700) 700-OFFICE"
+         }
+      },
+      "unitPrice":7.99,
+      "unitOfMeasure":"each",
+      "reorderPoint": 50,
+	  "reorderQuantity": 75,
+      "perishable":false,
+      "batches":[
+         {
+            "batchId":"STA-00013-A",
+            "purchaseDate":"2024-04-19",
+            "expiryDate":null,
+            "currentStock":15,
+            "discount":{
+               "enabled":false,
+               "discountType":"percentage",
+               "discountValue":0.0
+            }
+         }
+      ]
+   },
+   {
+      "itemId":"BAK-00014",
+      "itemName":"Chocolate Chip Cookies (Large)",
+      "itemType":"Bakery",
+      "supplier":{
+         "supplierId":"SUP-00003",
+         "name":"Sweet Treats Bakery",
+         "contact":{
+            "email":"info@sweettreatsbakery.com",
+            "phone":"+1 (444) 444-4444"
+         }
+      },
+      "unitPrice":6.99,
+      "unitOfMeasure":"dozen",
+      "reorderPoint": 10,
+	  "reorderQuantity": 20,
+      "perishable":true,
+      "batches":[
+         {
+            "batchId":"BAK-00014-A",
+            "purchaseDate":"2024-04-22",
+            "expiryDate":"2024-04-27",
+            "currentStock":10,
+            "discount":{
+               "enabled":true,
+               "discountType":"percentage",
+               "discountValue":0.15
+            }
+         }
+      ]
+   },
+   {
+      "itemId":"CLE-00015",
+      "itemName":"Dish Soap",
+      "itemType":"Cleaning Supplies",
+      "supplier":{
+         "supplierId":"SUP-00014",
+         "name":"Sparkling Clean Co.",
+         "contact":{
+            "email":"orders@sparklingclean.com",
+            "phone":"+1 (888) 888-CLEAN"
+         }
+      },
+      "unitPrice":2.99,
+      "unitOfMeasure":"L",
+      "reorderPoint": 20,
+	  "reorderQuantity": 80,
+      "perishable":false,
+      "batches":[
+         {
+            "batchId":"CLE-00015-A",
+            "purchaseDate":"2024-04-17",
+            "expiryDate":null,
+            "currentStock":75,
+            "discount":{
+               "enabled":false,
+               "discountType":"percentage",
+               "discountValue":0.0
+            }
+         }
+      ]
+   },
+   {
+      "itemId":"GRO-00016",
+      "itemName":"Red Onions",
+      "itemType":"Produce",
+      "supplier":{
+         "supplierId":"SUP-00002",
+         "name":"Fresh Harvest Co.",
+         "contact":{
+            "email":"sales@freshharvest.com",
+            "phone":"+1 (888) 888-8888"
+         }
+      },
+      "unitPrice":1.49,
+      "unitOfMeasure":"kg",
+      "reorderPoint": 5,
+	  "reorderQuantity": 85,
+      "perishable":true,
+      "batches":[
+         {
+            "batchId":"GRO-00016-A",
+            "purchaseDate":"2024-04-22",
+            "expiryDate":"2024-04-28",
+            "currentStock":48,
+            "discount":{
+               "enabled":true,
+               "discountType":"percentage",
+               "discountValue":0.2
+            }
+         }
+      ]
+   },
+   {
+      "itemId":"MEA-00017",
+      "itemName":"Chicken Breast (Boneless, Skinless)",
+      "itemType":"Meat",
+      "supplier":{
+         "supplierId":"SUP-00015",
+         "name":"Happy Hens Farms",
+         "contact":{
+            "email":"farm@happyhens.com",
+            "phone":"+1 (333) 333-CHICKEN"
+         }
+      },
+      "unitPrice":7.49,
+      "unitOfMeasure":"kg",
+      "reorderPoint": 20,
+	  "reorderQuantity": 100,
+      "perishable":true,
+      "batches":[
+         {
+            "batchId":"MEA-00017-A",
+            "purchaseDate":"2024-04-22",
+            "expiryDate":"2024-04-27",
+            "currentStock":30,
+            "discount":{
+               "enabled":true,
+               "discountType":"fixed amount",
+               "discountValue":1.5
+            }
+         },
+         {
+            "batchId":"MEA-00017-B",
+            "purchaseDate":"2024-04-20",
+            "expiryDate":"2024-04-30",
+            "currentStock":22,
+            "discount":{
+               "enabled":false,
+               "discountType":"percentage",
+               "discountValue":0.0
+            }
+         }
+      ]
+   },
+   {
+      "itemId":"BEV-00005",
+      "itemName":"Apple Juice",
+      "itemType":"Beverage",
+      "supplier":{
+         "supplierId":"SUP-00004",
+         "name":"Sunny Citrus Co.",
+         "contact":{
+            "email":"orders@sunnycitrus.com",
+            "phone":"+1 (777) 777-7777"
+         }
+      },
+      "unitPrice":2.5,
+      "unitOfMeasure":"L",
+      "reorderPoint": 20,
+	  "reorderQuantity": 80,
+      "perishable":true,
+      "batches":[
+         {
+            "batchId":"BEV-00005-B",
+            "purchaseDate":"2024-04-20",
+            "expiryDate":"2024-05-15",
+            "currentStock":55,
+            "discount":{
+               "enabled":true,
+               "discountType":"percentage",
+               "discountValue":0.1
+            }
+         }
+      ]
+   },
+   {
+      "itemId":"BAK-00018",
+      "itemName":"Blueberry Muffins",
+      "itemType":"Bakery",
+      "supplier":{
+         "supplierId":"SUP-00016",
+         "name":"Morning Fresh Bakery",
+         "contact":{
+            "email":"info@morningfreshbakery.com",
+            "phone":"+1 (555) 555-MUFFIN"
+         }
+      },
+      "unitPrice":3.99,
+      "unitOfMeasure":"each",
+      "reorderPoint": 20,
+	  "reorderQuantity": 100,
+      "perishable":true,
+      "batches":[
+         {
+            "batchId":"BAK-00018-A",
+            "purchaseDate":"2024-04-22",
+            "expiryDate":"2024-04-24",
+            "currentStock":12,
+            "discount":{
+               "enabled":false,
+               "discountType":"percentage",
+               "discountValue":0.0
+            }
+         }
+      ]
+   },
+   {
+      "itemId":"DAI-00019",
+      "itemName":"Paper Towels (Multipurpose)",
+      "itemType":"Cleaning Supplies",
+      "supplier":{
+         "supplierId":"SUP-00010",
+         "name":"Soft & Gentle Co.",
+         "contact":{
+            "email":"info@softandgentle.com",
+            "phone":"+1 (111) 111-1111"
+         }
+      },
+      "unitPrice":4.49,
+      "unitOfMeasure":"pack",
+      "reorderPoint": 50,
+	  "reorderQuantity": 75,
+      "perishable":false,
+      "batches":[
+         {
+            "batchId":"DAI-00019-A",
+            "purchaseDate":"2024-04-19",
+            "expiryDate":null,
+            "currentStock":80,
+            "discount":{
+               "enabled":true,
+               "discountType":"fixed amount",
+               "discountValue":0.75
+            }
+         }
+      ]
+   }
+]
